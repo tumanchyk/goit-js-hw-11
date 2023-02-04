@@ -36,9 +36,7 @@ button:hover,
 button:focus {
   background-color: #837b7b;
 }
-button.hidden {
-  display: none;
-}
+
 #search-form {
   display: flex;
   justify-content: center;
@@ -66,7 +64,7 @@ input {
 .photo-card {
   flex-basis: calc((100% - 200px) / 4);
   margin: 10px;
-}
+  box-shadow: 1px 3px 5px rgb(194, 188, 188);}
 .gallery-img {
   display: block;
   width: 100%;
@@ -82,7 +80,6 @@ input {
   display: flex;
   padding: 10px;
   justify-content: space-around;
-  border: 1px solid #bdb8b8;
   border-radius: 0 0 5px 5px;
 
 }
@@ -92,5 +89,14 @@ input {
   align-items: center;
 }
 .load-more {
-  font-size: 20px;
+margin: 0 auto;  
+font-size: 20px;
+}
+.load-more.hidden{
+ display: none;
+}
+.load-more:disabled{
+  color: #ccc5c5;
+  background-color: rgb(224, 222, 222);
+  cursor: none;
 }
